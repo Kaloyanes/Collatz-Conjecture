@@ -38,6 +38,7 @@
             this.btnDark = new System.Windows.Forms.Button();
             this.btnLight = new System.Windows.Forms.Button();
             this.btnCount = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblN
@@ -102,10 +103,12 @@
             // cmboxNumbers
             // 
             this.cmboxNumbers.AllowDrop = true;
+            this.cmboxNumbers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmboxNumbers.FormattingEnabled = true;
             this.cmboxNumbers.Location = new System.Drawing.Point(749, 8);
             this.cmboxNumbers.Name = "cmboxNumbers";
-            this.cmboxNumbers.Size = new System.Drawing.Size(222, 23);
+            this.cmboxNumbers.Size = new System.Drawing.Size(141, 23);
             this.cmboxNumbers.TabIndex = 10;
             // 
             // btnDark
@@ -143,11 +146,24 @@
             this.btnCount.UseVisualStyleBackColor = true;
             this.btnCount.Click += new System.EventHandler(this.btnCount_Click);
             // 
+            // btnRandom
+            // 
+            this.btnRandom.AutoSize = true;
+            this.btnRandom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRandom.Location = new System.Drawing.Point(382, 6);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(62, 25);
+            this.btnRandom.TabIndex = 14;
+            this.btnRandom.Text = "Random";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1317, 603);
+            this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnCount);
             this.Controls.Add(this.btnLight);
             this.Controls.Add(this.btnDark);
@@ -178,5 +194,6 @@
         private Button btnDark;
         private Button btnLight;
         private Button btnCount;
+        private Button btnRandom;
     }
 }
