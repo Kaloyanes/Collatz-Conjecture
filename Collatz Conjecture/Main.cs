@@ -1,5 +1,3 @@
-using System.Windows.Media;
-using System.Windows.Media.Animation;
 using LiveCharts;
 using LiveCharts.Geared;
 using LiveCharts.Wpf;
@@ -10,7 +8,6 @@ namespace Collatz_Conjecture
     public partial class Main : Form
     {
         private long n;
-        private long[] errorInts = new long[] { 0, 1, 2, 4 };
         private int steps;
         private Axis axisX;
         private Axis axisY;
@@ -193,11 +190,8 @@ namespace Collatz_Conjecture
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            foreach (var chart in CCChart.Series)
-            {
-                chart.Values.Clear();
-                chart.Erase(false);
-            }
+            CCChart.Series.Clear();
+
             cmboxNumbers.Items.Clear();
             cmboxNumbers.Text = "";
             numbers.Clear();
@@ -223,9 +217,10 @@ namespace Collatz_Conjecture
             btnDark.Show();
         }
 
-        // private void OrderCombo()
-        // {
-        //
-        // }
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            var saveFile = new SaveFileDialog();
+
+        }
     }
 }

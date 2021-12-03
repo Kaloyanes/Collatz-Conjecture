@@ -39,31 +39,35 @@
             this.btnLight = new System.Windows.Forms.Button();
             this.btnCount = new System.Windows.Forms.Button();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblN
             // 
             this.lblN.AutoSize = true;
-            this.lblN.Location = new System.Drawing.Point(12, 11);
+            this.lblN.Location = new System.Drawing.Point(15, 14);
+            this.lblN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblN.Name = "lblN";
-            this.lblN.Size = new System.Drawing.Size(27, 15);
+            this.lblN.Size = new System.Drawing.Size(34, 20);
             this.lblN.TabIndex = 0;
             this.lblN.Text = "N =";
             // 
             // txtN
             // 
-            this.txtN.Location = new System.Drawing.Point(45, 8);
+            this.txtN.Location = new System.Drawing.Point(56, 10);
+            this.txtN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtN.Name = "txtN";
-            this.txtN.Size = new System.Drawing.Size(182, 23);
+            this.txtN.Size = new System.Drawing.Size(226, 27);
             this.txtN.TabIndex = 2;
             // 
             // btnGenerate
             // 
             this.btnGenerate.AutoSize = true;
             this.btnGenerate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGenerate.Location = new System.Drawing.Point(233, 6);
+            this.btnGenerate.Location = new System.Drawing.Point(291, 8);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(64, 25);
+            this.btnGenerate.Size = new System.Drawing.Size(79, 30);
             this.btnGenerate.TabIndex = 3;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
@@ -74,27 +78,30 @@
             this.CCChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CCChart.Location = new System.Drawing.Point(12, 50);
+            this.CCChart.Location = new System.Drawing.Point(15, 62);
+            this.CCChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CCChart.Name = "CCChart";
-            this.CCChart.Size = new System.Drawing.Size(1293, 541);
+            this.CCChart.Size = new System.Drawing.Size(1616, 676);
             this.CCChart.TabIndex = 4;
             this.CCChart.Text = "CCChart";
             // 
             // lblLimit
             // 
             this.lblLimit.AutoSize = true;
-            this.lblLimit.Location = new System.Drawing.Point(558, 11);
+            this.lblLimit.Location = new System.Drawing.Point(698, 14);
+            this.lblLimit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLimit.Name = "lblLimit";
-            this.lblLimit.Size = new System.Drawing.Size(40, 15);
+            this.lblLimit.Size = new System.Drawing.Size(49, 20);
             this.lblLimit.TabIndex = 5;
             this.lblLimit.Text = "Limit: ";
             // 
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Location = new System.Drawing.Point(1230, 7);
+            this.btnClear.Location = new System.Drawing.Point(1538, 9);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(94, 29);
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -106,17 +113,19 @@
             this.cmboxNumbers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmboxNumbers.FormattingEnabled = true;
-            this.cmboxNumbers.Location = new System.Drawing.Point(749, 8);
+            this.cmboxNumbers.Location = new System.Drawing.Point(936, 10);
+            this.cmboxNumbers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmboxNumbers.Name = "cmboxNumbers";
-            this.cmboxNumbers.Size = new System.Drawing.Size(141, 23);
+            this.cmboxNumbers.Size = new System.Drawing.Size(175, 28);
             this.cmboxNumbers.TabIndex = 10;
             // 
             // btnDark
             // 
             this.btnDark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDark.Location = new System.Drawing.Point(1149, 7);
+            this.btnDark.Location = new System.Drawing.Point(1436, 9);
+            this.btnDark.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDark.Name = "btnDark";
-            this.btnDark.Size = new System.Drawing.Size(75, 23);
+            this.btnDark.Size = new System.Drawing.Size(94, 29);
             this.btnDark.TabIndex = 11;
             this.btnDark.Text = "Dark Mode";
             this.btnDark.UseVisualStyleBackColor = true;
@@ -125,9 +134,10 @@
             // btnLight
             // 
             this.btnLight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLight.Location = new System.Drawing.Point(1149, 7);
+            this.btnLight.Location = new System.Drawing.Point(1436, 9);
+            this.btnLight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLight.Name = "btnLight";
-            this.btnLight.Size = new System.Drawing.Size(75, 23);
+            this.btnLight.Size = new System.Drawing.Size(94, 29);
             this.btnLight.TabIndex = 12;
             this.btnLight.Text = "Light Mode";
             this.btnLight.UseVisualStyleBackColor = true;
@@ -138,9 +148,10 @@
             // 
             this.btnCount.AutoSize = true;
             this.btnCount.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCount.Location = new System.Drawing.Point(303, 6);
+            this.btnCount.Location = new System.Drawing.Point(379, 8);
+            this.btnCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCount.Name = "btnCount";
-            this.btnCount.Size = new System.Drawing.Size(73, 25);
+            this.btnCount.Size = new System.Drawing.Size(88, 30);
             this.btnCount.TabIndex = 13;
             this.btnCount.Text = "Count to 1";
             this.btnCount.UseVisualStyleBackColor = true;
@@ -150,19 +161,34 @@
             // 
             this.btnRandom.AutoSize = true;
             this.btnRandom.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRandom.Location = new System.Drawing.Point(382, 6);
+            this.btnRandom.Location = new System.Drawing.Point(478, 8);
+            this.btnRandom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(62, 25);
+            this.btnRandom.Size = new System.Drawing.Size(75, 30);
             this.btnRandom.TabIndex = 14;
             this.btnRandom.Text = "Random";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
             // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExport.Location = new System.Drawing.Point(1334, 9);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(94, 29);
+            this.btnExport.TabIndex = 15;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Visible = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1317, 603);
+            this.ClientSize = new System.Drawing.Size(1646, 754);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnCount);
             this.Controls.Add(this.btnLight);
@@ -174,7 +200,8 @@
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.txtN);
             this.Controls.Add(this.lblN);
-            this.MinimumSize = new System.Drawing.Size(1333, 642);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1662, 791);
             this.Name = "Main";
             this.Text = "Collatz Conjecture";
             this.ResumeLayout(false);
@@ -195,5 +222,6 @@
         private Button btnLight;
         private Button btnCount;
         private Button btnRandom;
+        private Button btnExport;
     }
 }
